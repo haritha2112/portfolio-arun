@@ -213,6 +213,28 @@ input, select, textarea {
 				width: calc(100% - 40px);
 			}
 
+			#nav > ul > li {
+				display: inline-block;
+				font-style: italic;
+				margin: 0 !important;
+				font-size: 1.05em !important;
+			}
+
+			ul li {
+				padding-left: 0 !important;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#nav > ul > li {
+				display: inline-block;
+				font-style: italic;
+				margin: 0 !important;
+				font-size: 0.9em !important;
+			}
+
 		}
 
 /* Row */
@@ -2093,6 +2115,7 @@ input, select, textarea {
 				display: inline-block;
 				font-style: italic;
 				margin: 0 0.35em 0 0.35em;
+				font-size: 1.2em;
 			}
 
 				#nav > ul > li > ul {
@@ -2113,6 +2136,7 @@ input, select, textarea {
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
 					background: #f3f3f3;
+					color: #d52349;
 				}
 
 				#nav > ul > li.current > a {
@@ -2451,7 +2475,7 @@ input, select, textarea {
 
 /* Medium */
 
-	#navPanel, #titleBar {
+	#navPanel {
 		display: none;
 	}
 
@@ -2486,9 +2510,9 @@ input, select, textarea {
 
 		/* Nav */
 
-			#nav {
+			/* #nav {
 				display: none;
-			}
+			} */
 
 		/* Intro */
 
@@ -2549,64 +2573,6 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
 			}
-
-			#titleBar {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 44px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: 10001;
-				background: none;
-			}
-
-				#titleBar .toggle {
-					text-decoration: none;
-					width: 80px;
-					height: 60px;
-				}
-
-					#titleBar .toggle:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						display: inline-block;
-						font-style: normal;
-						font-variant: normal;
-						text-rendering: auto;
-						line-height: 1;
-						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
-						font-weight: 900;
-					}
-
-					#titleBar .toggle:before {
-						content: '\f0c9';
-						display: block;
-						position: absolute;
-						left: 10px;
-						top: 10px;
-						width: 50px;
-						height: 40px;
-						line-height: 40px;
-						font-size: 18px;
-						color: #fff;
-						text-align: center;
-						background: rgba(150, 150, 150, 0.75);
-						border-radius: 5px;
-					}
-
-					#titleBar .toggle:active:before {
-						background-color: #969696;
-					}
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -2679,13 +2645,6 @@ input, select, textarea {
 				}
 
 			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
-			}
-
-			body.navPanel-visible #titleBar {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
