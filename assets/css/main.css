@@ -213,6 +213,7 @@ input, select, textarea {
 				width: calc(100% - 40px);
 			}
 
+			#nav-other > ul > li,
 			#nav > ul > li {
 				display: inline-block;
 				font-style: italic;
@@ -234,6 +235,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			#nav-other > ul > li,
 			#nav > ul > li {
 				display: inline-block;
 				font-style: italic;
@@ -2109,7 +2111,8 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
+	#nav,
+	#nav-other {
     color: white;
     background: #858484;
 		height: 5em;
@@ -2129,6 +2132,15 @@ input, select, textarea {
     	align-items: center;
 		}
 
+		#nav-other > ul {
+			margin: 0;
+			height: 100%;
+			display: flex;
+    	justify-content: flex-start;
+    	align-items: center;
+		}
+
+			#nav-other > ul > li,
 			#nav > ul > li {
 				display: inline-block;
 				font-style: italic;
@@ -2136,10 +2148,12 @@ input, select, textarea {
 				font-size: 1.2em;
 			}
 
+				#nav-other > ul > li > ul,
 				#nav > ul > li > ul {
 					display: none;
 				}
 
+				#nav-other > ul > li > a,
 				#nav > ul > li > a {
 					border-radius: 5px;
 					color: #fff;
@@ -2152,11 +2166,15 @@ input, select, textarea {
 					outline: 0;
 				}
 
-				#nav > ul > li:hover > a, #nav > ul > li.active > a {
+				#nav-other > ul > li:hover > a,
+				#nav-other > ul > li.active > a,
+				#nav > ul > li:hover > a,
+				#nav > ul > li.active > a {
 					background: #f3f3f3;
 					color: #d52349;
 				}
 
+				#nav-other > ul > li.current > a,
 				#nav > ul > li.current > a {
 					background: #d52349;
 					color: #fff !important;
