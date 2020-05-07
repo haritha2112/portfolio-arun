@@ -2016,7 +2016,6 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		text-decoration: none;
-		pointer-events: none;
 	}
 
 		.icon:before {
@@ -2102,7 +2101,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background: #ffffff;
+		background: #f7f7f7 url("images/bg02.png");
 		padding: 5em 0 0;
 		text-align: center;
 	}
@@ -2486,7 +2485,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 30px 0;
+				padding: 5em 0;
 			}
 
 		/* Footer */
@@ -2547,7 +2546,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 3.5em 0 0;
+				padding: 6.5em 0 0;
 			}
 
 		/* Nav */
@@ -2799,6 +2798,10 @@ input, select, textarea {
 					top: 0.8em;
 				}
 
+				ul.contact li p {
+					margin: 0 0 0 30px;
+				}
+
 		/* Dates */
 
 			ul.dates li {
@@ -2845,7 +2848,7 @@ input, select, textarea {
 
 			#header {
 				text-align: center;
-				padding: 2em 0 0;
+				padding: 5em 0 0;
 			}
 
 				#header h1 {
