@@ -248,7 +248,12 @@ input, select, textarea {
 				width: 100% !important;
 				margin: 0 0 2em 0;
 			}
+		}
 
+		@media (min-width: 736px) {
+			.box-paragraph {
+				min-height: 100px;
+			}
 		}
 
 /* Row */
