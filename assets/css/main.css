@@ -175,6 +175,15 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	.sub-major {
+		margin: 0;
+		padding-bottom: 3.5em;
+	}
+	.sub-major-second {
+		margin: 0;
+		padding: 1.5em 0 3.5em;
+	}
+
 /* Container */
 
 	.container {
