@@ -101,7 +101,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #5d5d5d;
+		color: #25333E;
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
@@ -184,6 +184,10 @@ input, select, textarea {
 		padding: 1.5em 0 3.5em;
 	}
 
+	.page-header {
+		font-size: 2.5em;
+	}
+
 /* Container */
 
 	.container {
@@ -262,6 +266,9 @@ input, select, textarea {
 		@media (min-width: 736px) {
 			.box-paragraph {
 				min-height: 100px;
+				max-height: 100px;
+			}
+			.box-paragraph-big {
 				max-height: 100px;
 			}
 		}
@@ -1630,7 +1637,7 @@ input, select, textarea {
 			top: 1.75em;
 			margin: -4.5em 0 4.25em -3.5em;
 			background: white;
-			min-height: 18em;
+			min-height: 22em;
 			display: flex;
 		}
 
